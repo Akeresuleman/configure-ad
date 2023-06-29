@@ -35,25 +35,29 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<img width="910" alt="image" src="https://github.com/Akeresuleman/configure-ad/assets/137787129/dac86b99-10d1-470d-862c-a9ffe22bf20b">
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="691" alt="image" src="https://github.com/Akeresuleman/configure-ad/assets/137787129/e56568cb-8af4-4173-b384-f1bc55dd4bf3">
+
+![image](https://github.com/Akeresuleman/configure-ad/assets/137787129/690ac50d-596c-4f3f-aee6-0e2121b8a3db)
+
+![image](https://github.com/Akeresuleman/configure-ad/assets/137787129/125dcce2-c2cd-4c1a-84b5-d348c02ff8e3)
+![image](https://github.com/Akeresuleman/configure-ad/assets/137787129/9ce0eb6d-650c-4f6c-b21c-25e6e181f901)
+
+  
+![image](https://github.com/Akeresuleman/configure-ad/assets/137787129/84faaa7c-330b-4945-b192-380a108b8936)
+<img width="577" alt="image" src="https://github.com/Akeresuleman/configure-ad/assets/137787129/9943a3ad-866e-41f1-9daf-a2550bd4fc9c">
+![image](https://github.com/Akeresuleman/configure-ad/assets/137787129/92bdc3a1-7235-4124-94d3-5134ca0fb135)
+
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Created my domain controllere VM named vmdc with vnet, vmdc-vnet and setup it's NIC private IP to static. created another virtual machine named client running windows 10 with the same vnet as vmdc. I then login client using a RD and ping vmdc's private ip which wasn't responding. I further login vmdc using another RD and enabled ICMPv4s in its windows firewall and ping vmdcs private ip again from client which was successful.
+  I then install my AD in the RD with the domain controller virtual machine vmdc and promote it in to a domaine controller with a new forest 'mydomain.com".
+Restarted and logged in to the vmdc as mydomain.com user. when to the ADUC and created two folders, -ADMINS and _EMPLOYEES respectively from which i created a user(Jane Doe) in the _AMIN folder and added to the domain admin group.
+  Ithen login to vmdc RD as the domain admin user.
+  I then Join Client to your domain (mydomain.com) and Setup Remote Desktop for non-administrative users on Client. Created a bunch of domain users and sign in to client with the domain users successfully
 </p>
-<br />
+
